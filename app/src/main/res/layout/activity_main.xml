@@ -7,6 +7,17 @@
     android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/nxtB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="146dp"
+        android:text="next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/re" />
+
     <RelativeLayout
         android:id="@+id/re"
         android:layout_width="0dp"
@@ -17,26 +28,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="30dp"
-            android:src="@drawable/ddd" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView"
-            android:layout_marginTop="1dp"
-            android:text="Suharto"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:textSize="30dp"
-            android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
         <Button
             android:id="@+id/nextB"
@@ -57,6 +48,26 @@
             android:layout_marginStart="66dp"
             android:layout_marginTop="43dp"
             android:hint="user Name" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ddd" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="1dp"
+            android:text="Suharto"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     </RelativeLayout>
 
